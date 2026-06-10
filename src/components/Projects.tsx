@@ -1,6 +1,7 @@
 import { PROJECTS } from '../data'
 import type { Project } from '../data'
 import { useTilt } from '../hooks/useTilt'
+import { ArrowUpRightIcon } from './icons'
 import { Mag } from './Mag'
 import { secDescCls, secHCls, secNumCls, secTagCls, sectionCls } from './section'
 
@@ -38,7 +39,7 @@ function ProjCard({ p }: { p: Project }) {
           target="_blank"
           rel="noopener"
         >
-          Visit Site ↗
+          Visit Site <ArrowUpRightIcon size={12} />
         </a>
         <a
           className="proj-btn inline-flex items-center gap-1.5 rounded-[50px] bg-bg px-[26px] py-[13px] font-mono text-xs font-medium tracking-[0.04em] text-ink no-underline neu-sm"
@@ -46,7 +47,7 @@ function ProjCard({ p }: { p: Project }) {
           target="_blank"
           rel="noopener"
         >
-          GitHub ↗
+          GitHub <ArrowUpRightIcon size={12} />
         </a>
       </div>
     </div>

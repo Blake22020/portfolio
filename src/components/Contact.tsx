@@ -1,3 +1,4 @@
+import { GitHubIcon, TelegramIcon } from './icons'
 import { Mag } from './Mag'
 import { secDescCls, secHCls, secNumCls, secTagCls, sectionCls } from './section'
 
@@ -31,13 +32,13 @@ export function Contact() {
               className="c-gh inline-flex items-center gap-2 rounded-[50px] border-none bg-bg px-8 py-3.5 font-mono text-[13px] font-medium text-ink no-underline neu transition-all duration-200"
               href="#"
             >
-              ⌥ GitHub
+              <GitHubIcon size={15} /> GitHub
             </a>
             <a
               className="c-tg inline-flex items-center gap-2 rounded-[50px] border-none px-8 py-3.5 font-mono text-[13px] font-medium no-underline neu transition-all duration-200"
               href="#"
             >
-              ✈ Telegram
+              <TelegramIcon size={15} /> Telegram
             </a>
           </div>
         </div>

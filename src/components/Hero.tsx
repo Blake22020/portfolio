@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useScramble } from '../hooks/useScramble'
+import { ArrowDownIcon } from './icons'
 import { MagButton } from './Mag'
 
 const CHIPS = [
@@ -85,12 +86,12 @@ export function Hero() {
             See My Work
           </MagButton>
           <MagButton
-            className="rounded-[50px] border-none bg-bg px-9 py-4 text-center font-display text-sm font-bold text-muted neu-md transition-all duration-200 hover:text-ink max-md:w-full"
+            className="inline-flex items-center justify-center gap-2 rounded-[50px] border-none bg-bg px-9 py-4 text-center font-display text-sm font-bold text-muted neu-md transition-all duration-200 hover:text-ink max-md:w-full"
             onClick={() =>
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
             }
           >
-            Get in Touch ↓
+            Get in Touch <ArrowDownIcon size={13} />
           </MagButton>
         </div>
         <div
