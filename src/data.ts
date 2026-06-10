@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     name: 'gblake',
     desc: 'A text-only social network — no images, no noise, just words. Built full-stack with a React + Tailwind frontend and a Node.js / Express API backed by MongoDB, deployed on Linux.',
     tags: ['TypeScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind', 'Linux'],
-    site: '#',
-    github: '#',
+    site: 'https://gblake.ru/',
+    github: 'https://github.com/blake22020/gblake',
   },
 ]
