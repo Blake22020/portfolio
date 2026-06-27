@@ -118,13 +118,17 @@
     overflow-x: hidden;
     cursor: none;
   }
+  *,
   a,
   button {
-    cursor: inherit;
+    cursor: none !important;
   }
   @media (max-width: 768px) {
-    body {
-      cursor: auto;
+    body,
+    *,
+    a,
+    button {
+      cursor: auto !important;
     }
     #cursor-dot,
     #cursor-ring {
