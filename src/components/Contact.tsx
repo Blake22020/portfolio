@@ -30,13 +30,13 @@ export function Contact() {
           <div className="relative z-[1] flex justify-center gap-4 max-md:flex-col max-md:items-center">
             <a
               className="c-gh inline-flex items-center gap-2 rounded-[50px] border-none bg-bg px-8 py-3.5 font-mono text-[13px] font-medium text-ink no-underline neu transition-all duration-200"
-              href="#"
+              href="https://github.com/blake22020"
             >
               <GitHubIcon size={15} /> GitHub
             </a>
             <a
               className="c-tg inline-flex items-center gap-2 rounded-[50px] border-none px-8 py-3.5 font-mono text-[13px] font-medium no-underline neu transition-all duration-200"
-              href="#"
+              href="https://t.me/blake22020"
             >
               <TelegramIcon size={15} /> Telegram
             </a>
