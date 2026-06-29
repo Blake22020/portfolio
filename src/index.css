@@ -45,6 +45,19 @@
   }
 }
 
+/* ── Dark theme: override the palette; neu utilities repaint automatically ── */
+html.dark {
+  --color-bg: #24262f;
+  --color-s1: #191b22;
+  --color-s2: #2f323d;
+  --color-acc: oklch(0.7 0.19 40);
+  --color-acc2: oklch(0.78 0.18 40);
+  --color-acc-glow: oklch(0.7 0.19 40 / 0.22);
+  --color-acc-soft: oklch(0.7 0.19 40 / 0.12);
+  --color-ink: #e7e9f2;
+  --color-muted: #9a9eb3;
+}
+
 /* ── Neumorphism shadow utilities ── */
 @utility neu-xs {
   box-shadow:
@@ -117,6 +130,9 @@
     font-family: var(--font-display);
     overflow-x: hidden;
     cursor: none;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease;
   }
   *,
   a,
@@ -263,17 +279,16 @@
       12px 12px 28px var(--color-s1);
   }
 
-  /* ── nav hire_me button ── */
-  .mag-btn {
+  /* ── nav theme toggle ── */
+  .theme-btn {
     transition: all 0.2s;
   }
-  .mag-btn:hover {
+  .theme-btn:hover {
     box-shadow:
       0 0 0 2px var(--color-acc),
       8px 8px 24px var(--color-s1),
       -4px -4px 14px var(--color-s2);
-    background: var(--color-acc);
-    color: #fff;
+    color: var(--color-acc2);
   }
 
   /* ── tech stack card ── */

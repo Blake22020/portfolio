@@ -1,6 +1,7 @@
 import { STACK } from '../data'
 import { Mag } from './Mag'
 import { secDescCls, secHCls, secNumCls, secTagCls, sectionCls } from './section'
+import { TechIcon } from './techIcons'
 
 export function Stack() {
   return (
@@ -30,7 +31,7 @@ export function Stack() {
                   className="s-card flex cursor-default items-center gap-3.5 rounded-[18px] bg-bg px-[26px] py-5 neu-md max-md:px-[18px] max-md:py-3.5"
                 >
                   <div className="s-icon flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-xl bg-bg font-mono text-[13px] font-bold text-acc neu-xs">
-                    {item.sym}
+                    <TechIcon name={item.name} fallback={item.sym} />
                   </div>
                   <div>
                     <div className="text-sm font-bold">{item.name}</div>

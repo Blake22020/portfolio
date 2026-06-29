@@ -29,15 +29,17 @@ interface MagButtonProps {
   children: ReactNode
   className?: string
   onClick?: () => void
+  ariaLabel?: string
 }
 
-export function MagButton({ children, className, onClick }: MagButtonProps) {
+export function MagButton({ children, className, onClick, ariaLabel }: MagButtonProps) {
   const mag = useMagnet<HTMLButtonElement>()
   return (
     <button
       ref={mag.ref}
       className={className}
       onClick={onClick}
+      aria-label={ariaLabel}
       onMouseMove={mag.onMouseMove}
       onMouseLeave={mag.onMouseLeave}
     >
